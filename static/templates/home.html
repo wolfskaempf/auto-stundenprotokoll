@@ -8,9 +8,16 @@
 {% endblock %}
 
 {% block content %}
-<h1>
-  a
-</h1>
+<div class="container">
+  <h1>Classes</h1>
+
+  {% for class in classes %}
+    <ul>
+      <li href="">class.name</li>
+    </ul>
+  {% endfor %}
+
+</div>
 {% endblock %}
 
 {% block footer %}
