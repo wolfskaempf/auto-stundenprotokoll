@@ -5,6 +5,8 @@ from django.shortcuts import render
 from .models import Class, Student, Lesson
 
 def home(request):
+    """ This view shows a list of all classes in the database """
+    classes = Class.objects.all()
 
     template = "home.html"
     context = {"classes": classes}
