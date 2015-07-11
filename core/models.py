@@ -4,10 +4,10 @@ from django.db import models
 
 class Class(models.Model):
     """ This model contains information about the given class """
-    className = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     identifier = models.CharField(max_length=100)
     subject = models.CharField(max_length=100)
-    lastPaidFor = models.DateTimeField(auto_now_add=False)
+    lastPaid = models.DateTimeField(auto_now_add=False)
 
     def __unicode__(self):
         # This function defines what the object will return when it's viewed as a whole.
@@ -27,12 +27,12 @@ class Student(models.Model):
         # This function defines what the object will return when it's viewed as a whole.
         return self.firstName + " " + self.lastName
 
-class LessonProtocol(models.Model):
+class Lesson(models.Model):
     """ This model contains the protocol text of a given lesson in a class """
     inClass = models.ForeignKey(Class)
-    protocolDate = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True)
     attendingStudents = models.ManyToManyField(Student)
-    protocolText = models.TextField()
+    protocol = models.TextField()
 
 
     def __unicode__(self):
