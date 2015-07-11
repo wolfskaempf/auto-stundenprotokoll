@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from core import views
+
 urlpatterns = [
+    url(r'^$', views.home, name='home'),
+    url(r'^classes/(?P<pk>\d+)/$', views.singleClass, name='singleClass'),
     url(r'^admin/', include(admin.site.urls)),
 ]
