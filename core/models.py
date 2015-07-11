@@ -11,7 +11,7 @@ class Class(models.Model):
 
     def __unicode__(self):
         # This function defines what the object will return when it's viewed as a whole.
-        return self.className
+        return self.name
 
     class Meta:
         verbose_name_plural = "Classes"
