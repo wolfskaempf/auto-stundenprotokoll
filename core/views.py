@@ -13,6 +13,7 @@ def home(request):
     return render(request, template, context)
 
 def singleClass(request, pk):
+    """ This view is supposed to be printed once a month for the archive. It should reset itself after every "lastPaid" of any given class """
     template = "singleClass.html"
     context = {}
     return render(request, template, context)
