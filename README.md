@@ -9,7 +9,7 @@ Enabling teachers of the German BuT to automate their protocols
 
 1. Install git by typing git into the terminal. If you don't have it installed yet you'll be prompted to install the command line tools. Follow the instructions.
 
-2. Pull the repository `git pull git@github.com:wolfskaempf/auto-stundenprotokoll.git`
+2. Pull the repository `git clone git@github.com:wolfskaempf/auto-stundenprotokoll.git`
 
 3. Change into the new directory `cd auto-stundenprotokoll`
 
