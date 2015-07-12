@@ -1,9 +1,6 @@
 # auto-stundenprotokoll
 Enabling teachers of the German BuT to automate their protocols
 
-[Usage under OS X](##OS X)
-
-[Usage under Linux](##Linux)
 
 ##OS X
 
