@@ -1,11 +1,11 @@
 # auto-stundenprotokoll
 Enabling teachers of the German BuT to automate their protocols
 
-[Usage under OS X](## Usage under OS X)
+[Usage under OS X](##OS X)
 
-[Usage under Linux](## Usage under Linux)
+[Usage under Linux](##Linux)
 
-## Usage under OS X
+##OS X
 
 1. Install git by typing git into the terminal. If you don't have it installed yet you'll be prompted to install the command line tools. Follow the instructions.
 
@@ -29,7 +29,7 @@ Enabling teachers of the German BuT to automate their protocols
 
 11. You're done.
 
-## Usage under Linux
+##Linux
 
 1. Install git `sudo apt-get install git`
 
