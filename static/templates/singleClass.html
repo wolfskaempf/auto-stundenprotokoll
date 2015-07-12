@@ -11,46 +11,50 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-4">
-      <h4><small>Unterrichtsprotokoll</small></h4>
+      <h4>
+        <small>Unterrichtsprotokoll</small>
+      </h4>
     </div>
     <div class="col-xs-3">
-      <h4><small>Kursr. {{ class.identifier }}</small></h4>
+      <h4>
+        <small>Kursr. {{ class.identifier }}</small>
+      </h4>
     </div>
     <div class="col-xs-5">
-      <h4><small>DozentIn: {{ class.teacher }}</small></h4>
+      <h4>
+        <small>DozentIn: {{ class.teacher }}</small>
+      </h4>
     </div>
   </div>
 
-<h3>{{ class.name }} {{ class.subject }}</h3>
+  <h3>{{ class.name }} {{ class.subject }}</h3>
 
-<table class="table table-striped table-bordered">
-  <tr>
-    <th>
-      Datum
-    </th>
-    <th>
-      Unterrichtsinhalte
-    </th>
-    <th>
-      Anwesend
-    </th>
-  </tr>
-  {% for lesson in lessons %}
-  <tr>
-    <td>
-      {{ lesson.date }}
-    </td>
-    <td>
-      {{ lesson.protocol }}
-    </td>
-    <td>
-      {% for student in lesson.attendingStudents.all %}
-      {{ student.firstName }} {{ student.lastName }}
-      {% endfor %}
-    </td>
-  </tr>
-  {% endfor %}
-</table>
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>
+        Datum
+      </th>
+      <th>
+        Unterrichtsinhalte
+      </th>
+      <th>
+        Anwesend
+      </th>
+    </tr>
+    {% for lesson in lessons %}
+    <tr>
+      <td>
+        {{ lesson.date }}
+      </td>
+      <td>
+        {{ lesson.protocol }}
+      </td>
+      <td>
+        {% for student in lesson.attendingStudents.all %} {{ student.firstName }} {{ student.lastName }} {% endfor %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
 
 </div>
 
@@ -61,10 +65,7 @@
 
 <div class="container well">
   Unterschrift {{ class.teacher }}
-</div>
-
-
-{% endblock %}
+</div>{% endblock %}
 
 {% block footer %}
 {% endblock %}

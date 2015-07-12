@@ -12,9 +12,9 @@
   <h1>Classes</h1>
 
   {% for class in classes %}
-    <ul>
-      <li><a href="{% url 'singleClass' class.pk %}">{{ class.name }} {{ class.subject }}</a></li>
-    </ul>
+  <ul>
+    <li><a href="{% url 'singleClass' class.pk %}">{{ class.name }} {{ class.subject }}</a></li>
+  </ul>
   {% endfor %}
 
 </div>
