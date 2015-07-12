@@ -15,9 +15,9 @@ Enabling teachers of the German BuT to automate their protocols
 
 4. Open the virtual environment. `source bin/activate`
 
-5. Create a superuser `python manage.py createsuperuser`
+5. Initialize the database `python manage.py makemigrations && python manage.py migrate`
 
-6. Initialize the database `python manage.py makemigrations && python manage.py migrate`
+6. Create a superuser `python manage.py createsuperuser`
 
 7. Run the server `python manage.py runserver`
 
@@ -33,15 +33,15 @@ Enabling teachers of the German BuT to automate their protocols
 
 1. Install git `sudo apt-get install git`
 
-2. Pull the repository `git pull git@github.com:wolfskaempf/auto-stundenprotokoll.git`
+2. Pull the repository `git clone git@github.com:wolfskaempf/auto-stundenprotokoll.git`
 
 3. Change into the new directory `cd auto-stundenprotokoll`
 
 4. Open the virtual environment. `source bin/activate`
 
-5. Create a superuser `python manage.py createsuperuser`
+5. Initialize the database `python manage.py makemigrations && python manage.py migrate`
 
-6. Initialize the database `python manage.py makemigrations && python manage.py migrate`
+6. Create a superuser `python manage.py createsuperuser`
 
 7. Run the server `python manage.py runserver`
 
