@@ -1,6 +1,7 @@
 # auto-stundenprotokoll
 Enabling teachers of the German BuT to automate their protocols
 
+You can find usage information for OS X and Linux below. Windows should also work but some commands are entirely different.
 
 ##OS X
 
