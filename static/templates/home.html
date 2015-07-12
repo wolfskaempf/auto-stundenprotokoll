@@ -13,7 +13,7 @@
 
   {% for class in classes %}
     <ul>
-      <li><a href="{% url 'singleClass' class.pk %}">{{ class.name }}</a></li>
+      <li><a href="{% url 'singleClass' class.pk %}">{{ class.name }} {{ class.subject }}</a></li>
     </ul>
   {% endfor %}
 
