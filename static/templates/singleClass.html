@@ -45,7 +45,7 @@
     </td>
     <td>
       {% for student in lesson.attendingStudents.all %}
-      {{ student }}
+      {{ student.firstName }} {{ student.lastName }}
       {% endfor %}
     </td>
   </tr>
