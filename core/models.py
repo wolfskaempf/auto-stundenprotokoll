@@ -41,7 +41,7 @@ class Lesson(models.Model):
   """ This model contains the protocol text of a given lesson in a class """
   inClass = models.ForeignKey(Class)
   date = models.DateField(auto_now_add=False)
-  attendingStudents = models.ManyToManyField(Student)
+  attendingStudents = models.ManyToManyField(Student, blank=True)
   protocol = models.TextField()
 
   def __unicode__(self):
