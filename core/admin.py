@@ -7,7 +7,7 @@ from .models import Class, Lesson, Student
 class LessonAdmin(admin.ModelAdmin):
   # This defines what the Lesson Model should look like in the Django Admin
   list_display = ["date", "inClass", "protocol", ]
-  search_fields = ["date", "inClass", "protocol", ]
+  search_fields = ["date", "inClass__name", "inClass__subject", "protocol", ]
 
 
 class ClassAdmin(admin.ModelAdmin):
