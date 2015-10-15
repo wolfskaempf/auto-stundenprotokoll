@@ -14,11 +14,13 @@ def home(request):
   return render(request, template, context)
 
 
-def singleClass(request, pk):
+def singleClass(request, pk, entries):
   """ This view is supposed to be printed once a month for the archive. It should reset itself after every "lastPaid" of any given class """
+  if not entries:
+      entries = 4
 
   activeClass = Class.objects.get(pk=pk)
-  lessons = Lesson.objects.filter(inClass=pk).order_by("date")
+  lessons = Lesson.objects.filter(inClass=pk).order_by("date").reverse()[:entries]
 
   template = "singleClass.html"
   context = {"class": activeClass, "lessons": lessons}

@@ -20,6 +20,6 @@ from core import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
-    url(r'^class/(?P<pk>\d+)/$', views.singleClass, name='singleClass'),
+    url(r'^class/(?P<pk>\d+)/((?P<entries>\d+)/)?$', views.singleClass, name='singleClass'),
     url(r'^admin/', include(admin.site.urls)),
 ]
