@@ -11,6 +11,7 @@ class Class(models.Model):
   identifier = models.CharField(max_length=100)
   subject = models.CharField(max_length=100)
   lastPaid = models.DateField(auto_now_add=False)
+  remarks = models.TextField(blank=True)
 
   def __unicode__(self):
     # This function defines what the object will return when it's viewed as a
@@ -26,7 +27,7 @@ class Student(models.Model):
   """ This model contains information about the student itself. """
   firstName = models.CharField(max_length=100)
   lastName = models.CharField(max_length=100)
-  # This is the class the student is in. It's not possible to just use class
+  # This is the class the student is in. It's not possible to just use "class" as the name for this ManyToManyField
   # as it conflicts with python.
   inClass = models.ManyToManyField(Class)
 

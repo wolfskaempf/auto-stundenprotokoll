@@ -53,9 +53,20 @@
 </div>
 
 
-<div class="container well">
-  Vermerke
-</div>
+{% if class.remarks %}
+  <div class="container well">
+    <p>
+      Vermerke
+    </p>
+    <p>
+      {{ class.remarks }}
+    </p>
+  </div>
+{% else %}
+  <div class="container well">
+    Keine Vermerke
+  </div>
+{% endif %}
 
 <div class="container well">
   Unterschrift {{ class.teacher }}
