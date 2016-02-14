@@ -20,7 +20,7 @@ def singleClass(request, pk, entries):
       entries = 4
 
   activeClass = Class.objects.get(pk=pk)
-  lessons = Lesson.objects.filter(inClass=pk).order_by("date").reverse()[:entries]
+  lessons = Lesson.objects.filter(in_class=pk).order_by("date").reverse()[:entries]
 
   template = "singleClass.html"
   context = {"class": activeClass, "lessons": lessons}

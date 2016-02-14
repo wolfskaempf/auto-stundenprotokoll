@@ -1,6 +1,10 @@
 *.pyc
 *.sqlite3
 *.codekit
+bin/*
+include/*
+lib/*
+pip-selfcheck.json
 .Python
 .DS_Store
 
@@ -9,4 +13,5 @@ config.codekit
 
 media/*
 
+db.sqlite3
 

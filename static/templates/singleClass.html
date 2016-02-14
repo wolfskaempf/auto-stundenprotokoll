@@ -44,7 +44,7 @@
         {{ lesson.protocol|safe }}
       </td>
       <td>
-        {% for student in lesson.attendingStudents.all %} {{ student.firstName }} {{ student.lastName }} {% endfor %}
+        {% for student in lesson.attending_students.all %} {{ student.first_name }} {{ student.last_name }} {% endfor %}
       </td>
     </tr>
     {% endfor %}
