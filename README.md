@@ -1,4 +1,4 @@
-# auto-stundenprotokoll
+# auto-stundenprotokoll [![Code Issues](https://www.quantifiedcode.com/api/v1/project/1632c04beb9d4b9c8e5c106bce1cc395/badge.svg)](https://www.quantifiedcode.com/app/project/1632c04beb9d4b9c8e5c106bce1cc395)
 Enabling teachers of the German BuT to automate their protocols
 
 You can find usage information for OS X and Linux below. Windows should also work but some commands are entirely different.
